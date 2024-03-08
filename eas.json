@@ -1,0 +1,29 @@
+{
+  "cli": {
+    "version": ">= 7.3.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": false,
+      "distribution": "internal"
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      },
+      "distribution": "internal"
+    },
+    "production": {
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "CYCLIC_URL": "https://zealous-foal-yoke.cyclic.app/",
+        "NEWS_API_KEY": "2b6db01f3ce84bf89e65304532dd7f97"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

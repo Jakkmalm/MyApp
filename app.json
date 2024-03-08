@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -21,16 +19,27 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.chanbatte.MyApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
+      ["expo-font"],
       [
-        "expo-font"
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
       ]
-      
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "0dcacb8d-fb49-4d1c-8f77-f655d3d4bf66"
+      }
+    }
   }
 }

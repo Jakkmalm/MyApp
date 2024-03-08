@@ -1,7 +1,11 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet } from "react-native";
 //https://reactnavigation.org/docs/tab-based-navigation
 import React, { useEffect } from "react";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+import "react-native-screens";
+import "react-native-safe-area-context";
+import "react-native-reanimated";
 
 // Custom-Fonts-dep
 import { useFonts } from "expo-font";
@@ -29,7 +33,6 @@ const App = () => {
         await SplashScreen.hideAsync();
       }
     };
-
     hideSplashScreen();
   });
 
@@ -39,8 +42,13 @@ const App = () => {
 
   return (
     <>
-      <StatusBar backgroundColor={COLORS.primary} />
-      <AppNavigation />
+      {/*Wrappat appen i en GestureHandleRootView */}
+      <GestureHandlerRootView style={{ flex: 1 }}>
+        {/* Statusbar komponent */}
+        <StatusBar backgroundColor={COLORS.secondary} />
+        {/* AppNavigation */}
+        <AppNavigation />
+      </GestureHandlerRootView>
     </>
   );
 };

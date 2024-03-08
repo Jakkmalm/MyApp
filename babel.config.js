@@ -3,7 +3,9 @@ module.exports = function (api) {
   return {
     presets: ["babel-preset-expo"],
     // https://medium.com/swlh/how-to-properly-use-environment-variables-in-an-expo-react-native-app-7ab852590b30
-    plugins: ["module:react-native-dotenv"],
+    // reanimated
+    // .env Variables paketet
+    plugins: ["module:react-native-dotenv", "react-native-reanimated/plugin"],
   };
 };
 

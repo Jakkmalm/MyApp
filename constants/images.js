@@ -1,4 +1,4 @@
-// produktbilder
+// produktbilder/Placeholder bilder
 import asics from "../assets/images/asics.webp";
 import converse from "../assets/images/converse.webp";
 import hoka from "../assets/images/hoka.webp";
@@ -10,8 +10,6 @@ import sketchers from "../assets/images/sketchers.webp";
 import vans from "../assets/images/vans.webp";
 import noImg from "../assets/images/noImg.jpg";
 
-//Bakgrundsbilder
-//import bgImg from "../assets/welcomeBackground.jpg";
 
 export default {
   asics,

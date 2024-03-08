@@ -16,20 +16,25 @@ const SIZES = {
 };
 
 const COLORS = {
-  primary: "#3a8786",
-  wupsprimary: "#09bdb2",
-  secondary: "#002A3A", 
-  lightBlue: "#67B2B3",
-  detail: "#9AD0C2",
-
-  creamWhite: "#F5FAEA",
+  primary: "#da5e5a",
+  secondary: "#304057",
+  card: "#da5e5a",
+  detail: "#252934",
   white: "#ffffff",
-  offWhite: "#f6f6f6",
-  gray: "#404040",
+  navigation: "#fdb903",
+  
+  offWhite: "#f4e0f9",
   black: "#1C1D1B",
-
-  fitbitPrimary: "#09bdb2",
-  fitbitSecondary: "#4D8585",
 };
+/*
+  primary: "#fdb903",
+  secondary: "#304057",
+  detail: "#e2814d",
+  white: "#ffffff",
+  offWhite: "#f4e0f9",
+  card: "#da5e5a",
+  black: "#1C1D1B",
+*/
+
 
 export { FONT, SIZES, COLORS };
