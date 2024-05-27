@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import { CYCLIC_URL } from "@env";
+import { RENDER_URL } from "@env";
 
 // CUSTOM HOOK för att hämta data från api.
 
 const useFetchApi = () => {
-  console.log(CYCLIC_URL, "CYCLIC_URL");
+  console.log(RENDER_URL, "RENDER_URL");
   // states för data och laddar
   const [shoesData, setShoesData] = useState([]);
   const [isLoadingShoes, setIsLoadingShoes] = useState(true);
@@ -12,7 +12,7 @@ const useFetchApi = () => {
   async function fetchShoes() {
     try {
       // await fetch till api
-      const response = await fetch(CYCLIC_URL);
+      const response = await fetch(RENDER_URL);
       // lagra response i data
       const data = await response.json();
       // set state till data

@@ -4,7 +4,7 @@ import React, { useMemo, useState, useEffect } from "react";
 import BottomSheet, { BottomSheetBackdrop } from "@gorhom/bottom-sheet";
 import { styles } from "./CustomBottomSheetStyle";
 // environment variabler för API
-import { CYCLIC_URL } from "@env";
+import { RENDER_URL } from "@env";
 import {
   View,
   Text,
@@ -57,7 +57,7 @@ const CustomBottomSheet = ({
     //
     try {
       // PUT-request till API - uppdaterar sko med selectedData._id (aktuell sko)
-      const response = await fetch(`${CYCLIC_URL}${selectedData._id}`, {
+      const response = await fetch(`${RENDER_URL}${selectedData._id}`, {
         method: "put",
         headers: {
           "Content-Type": "application/json",

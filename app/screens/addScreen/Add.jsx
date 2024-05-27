@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { styles } from "./AddStyles";
-import { CYCLIC_URL } from "@env";
+import { RENDER_URL } from "@env";
 import { FONT, SIZES, COLORS } from "../../../constants";
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import { Snackbar } from "react-native-paper";
@@ -52,7 +52,7 @@ const Add = ({}) => {
     setIsPosting(true);
 
     try {
-      const response = await fetch(CYCLIC_URL, {
+      const response = await fetch(RENDER_URL, {
         method: "post",
         headers: {
           "Content-Type": "application/json",

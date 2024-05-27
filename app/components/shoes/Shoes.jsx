@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { styles } from "./ShoesStyle";
-import { CYCLIC_URL } from "@env";
+import { RENDER_URL } from "@env";
 import ShoeModal from "../shoeModal/ShoeModal";
 import {
   View,
@@ -49,10 +49,10 @@ const Shoes = ({ shoeData, updateData, onPress }) => {
   // Delete-funktion
 
   const submitDelete = async () => {
-    console.log(`${CYCLIC_URL}/${shoeData._id}`);
+    console.log(`${RENDER_URL}/${shoeData._id}`);
     setIsDeleting(true);
     try {
-      const response = await fetch(`${CYCLIC_URL}${shoeData._id}`, {
+      const response = await fetch(`${RENDER_URL}${shoeData._id}`, {
         method: "delete",
         header: {
           "Content-Type": "application/json",
