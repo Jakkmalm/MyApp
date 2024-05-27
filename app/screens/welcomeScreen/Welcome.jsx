@@ -30,7 +30,7 @@ const Welcome = ({}) => {
         <Text style={styles.shoeyTitle}>SHOEY</Text>
       </View>
       <View style={styles.textWrapper}>
-        <Text style={styles.text}>Här kan du samla dina favoritskor!</Text>
+        <Text style={styles.text}>Appen för dig som älskar skor!</Text>
         <CustomButton title="Fortsätt" onPress={goToHome} />
       </View>
     </ImageBackground>
