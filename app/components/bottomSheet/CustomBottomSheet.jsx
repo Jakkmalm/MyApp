@@ -45,8 +45,7 @@ const CustomBottomSheet = ({
       50
     );
   };
-
-  // put-request till api
+  // put-request till API
   // Asyncron funktion
   const submitUpdate = async () => {
     // om ingen ändring skett i input - returnera
