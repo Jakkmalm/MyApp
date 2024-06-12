@@ -17,6 +17,21 @@ export const styles = StyleSheet.create({
     overflow: "hidden",
     marginBottom: 15,
   },
+  quickAddContainer: {
+    position: "absolute",
+    backgroundColor: COLORS.white,
+    bottom: 185,
+    right: -5,
+    width: 40,
+    height: 40,
+    borderRadius: 25,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  addSign: {
+    fontSize: SIZES.medium,
+    color: COLORS.white,
+  },
   image: {
     backgroundColor: COLORS.secondary,
     flex: 0.7,
@@ -38,6 +53,7 @@ export const styles = StyleSheet.create({
   author: {
     fontFamily: FONT.medium,
     fontSize: SIZES.xSmall,
+    color: COLORS.black,
   },
   bottomContainer: {
     justifyContent: "space-between",

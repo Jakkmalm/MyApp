@@ -7,6 +7,7 @@ import {
   ActivityIndicator,
   TouchableOpacity,
   Dimensions,
+  TextInput,
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import ShoeMiniCard from "../../components/shoeMiniCard/ShoeMiniCard";
@@ -119,8 +120,6 @@ const Home = () => {
         <View style={styles.textWrapper}>
           <Text style={styles.title}>Mittsektion</Text>
         </View>
-
-        <View></View>
       </View>
       <View style={styles.bottomHorizontalContainer}>
         <View style={styles.textWrapper}>
