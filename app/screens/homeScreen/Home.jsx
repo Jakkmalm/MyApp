@@ -45,7 +45,7 @@ const Home = () => {
   // navigation i dependency array innebär att useEffect körs när ändring sker på navigation.
   useEffect(() => {
     const unsubscribe = navigation.addListener("focus", () => {
-      //fetchShoes();
+      refetchShoes();
       console.log("HOME.JSX - refetchShoes on Focus");
     });
     console.log("HOME.JSX - unsubscribe");
